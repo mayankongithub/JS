@@ -45,3 +45,4 @@ let s2 = 200;
 let s3 = 300;
 newarr = Array.of(s1,s2,s3);
 console.log(newarr);
+

@@ -23,6 +23,9 @@
 
 //   IMPLICIT FUNCTION
 
+// add = a => a + 4
+// console.log(add(4));
+
 // add = (a,b) => a + b
 // console.log(add(4,4));
 
@@ -33,4 +36,25 @@
 // name = add()
 // console.log(name);
 
-console.log(this);
+// ab = (a,b) => {
+//     var c = 10;
+//     console.log(this);
+//     return a+b;
+// }
+
+// ab(1,2);
+
+// abc = function(){
+//     console.log(this);
+// }
+
+// abc();
+// console.log(this);
+
+ab = (a,b) => {
+    var c = 10;
+    console.log(arguments);
+}
+
+ab(1,2);
+
