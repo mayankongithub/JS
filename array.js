@@ -7,7 +7,7 @@
 
 
 // arr = [1,2,3,4,5,6];
-// console.log(typeof arr.join());
+// console.log(arr.join());
 
 
 // arr1 = [1,2,3,4];
@@ -40,9 +40,11 @@
 
 // Array.of => YE VARIABLES KO ARRAY MAI CONVERT KR DETA H
 
-let s1 = 100;
-let s2 = 200;
-let s3 = 300;
-newarr = Array.of(s1,s2,s3);
-console.log(newarr);
+// let s1 = 100;
+// let s2 = 200;
+// let s3 = 300;
+// newarr = Array.of(s1,s2,s3);
+// console.log(newarr);
 
+arr = [1,2,3,4,5,6];
+console.log(arr.join());

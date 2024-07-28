@@ -71,25 +71,16 @@
 //     console.log('interval'); 
 //  }, 300);
 // console.log('end');
+// 3>2 ? console.log('true') :console.log('false');
 
-function fetchdata(callback,errorCallback){
-    setTimeout(() => {
-        const error = false;
-        if(error){
-            errorCallback("Error fetching data");
-        }
-        else{
-            console.log("Data fetched from server");
-            callback;
-        }
-    },2000);
-}
+i = 1;
+let store=setInterval(() => {
+    console.log(i*i);
+    i++;
+    if(i==7){
+        console.log("Thanku");
+        clearInterval(store);
+    }
+}, 1000);
 
-function process(){
-    console.log("Processing data");
-}
 
-function handel(error){
-    console.error(error);
-}
-fetchdata(process,handel)
